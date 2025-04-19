@@ -1,0 +1,29 @@
+{
+    "name": "resep-nusantara/api",
+    "description": "Backend API untuk Aplikasi Resep Makanan Nusantara",
+    "type": "project",
+    "require": {
+      "php": "^8.0",
+      "ext-json": "*",
+      "ext-mysqli": "*",
+      "monolog/monolog": "^2.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "App\\": "src/"
+      },
+      "files": [
+        "config/db.php"
+      ]
+    },
+    "config": {
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }

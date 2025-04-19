@@ -1,0 +1,67 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .add-resep-btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-resep-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .resep-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .loading, .empty-message, .error-message {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-weight: bold;
+  }
